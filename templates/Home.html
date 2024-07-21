@@ -1,0 +1,165 @@
+{% extends "layout1.html" %}
+{% block head %}
+    <!--
+
+ -->
+
+</header>
+<main>
+
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <picture>
+          <source class="bd-placeholder-img " style="width:100%;height:100%;" media="(min-width: 990px)" srcset="{{url_for('static',filename='slide/1.png')}}">
+          <img class="bd-placeholder-img setImg" src="{{url_for('static',filename='s1.jpg')}}">
+        </picture>
+        <!--<img class="bd-placeholder-img setImg"  src="{{url_for('static',filename='s1.jpg')}}" alt="">-->
+
+        <div class="container">
+          <div class="carousel-caption"><!-- text-start-->
+            <!--<h1>Example headline.</h1>
+            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>-->
+            <p><a class="btn btn-lg btn-primary" href="/donate1">Contribute</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <picture>
+          <source class="bd-placeholder-img " style="width:100%;height:100%;" media="(min-width: 990px)" srcset="{{url_for('static',filename='slide/2.png')}}">
+          <img class="bd-placeholder-img setImg" src="{{url_for('static',filename='s5.jpg')}}">
+        </picture>
+        <!--<img class="bd-placeholder-img setImg"  src="{{url_for('static',filename='s5.jpg')}}" alt="">-->
+        <div class="container">
+          <div class="carousel-caption">
+            <!--<h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>-->
+            <p><a class="btn btn-lg btn-primary" href="/donate1">Contribute</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <picture>
+          <source class="bd-placeholder-img "  media="(min-width: 990px)" srcset="{{url_for('static',filename='slide/3.png')}}">
+          <img class="bd-placeholder-img setImg" src="{{url_for('static',filename='s3.jpg')}}">
+        </picture>
+
+        <div class="container">
+          <div class="carousel-caption "><!--text-end-->
+          <!--  <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>-->
+            <p><a class="btn btn-lg btn-primary" href="/donate1">Contribute</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <!--<div class="row">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+        <h2 class="fw-normal">Heading</h2>
+        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div>-->
+      <!-- /.col-lg-4 -->
+  <!--    <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+        <h2 class="fw-normal">Heading</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div>-->
+      <!-- /.col-lg-4 -->
+    <!--  <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+        <h2 class="fw-normal">Heading</h2>
+        <p>And lastly this, the third column of representative placeholder content.</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div>-->
+      <!-- /.col-lg-4 -->
+    <!--</div>--><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">OUR HISTORY <!--<span class="text-body-secondary">It’ll blow your mind.</span>--></h2>
+        <p class="lead">‘Gurukul’ (under the aegis of the Navnirman Charitable Trust) came into being on 9th October, 1988 when Late Shri Anantrao Shintre and his wife Smt. Anjali Shintre converted the ancestral home of the Shintre family in the village of Jambhulpada into a holistic institution for underprivileged students to pursue their dream of foundational education and human & social values. Initially, they personally looked after 5 children, taking care of their food, clothing and shelter.</p>
+      </div>
+      <div class="col-md-5">
+        <!--<svg  xmlns="http://www.w3.org/2000/svg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>-->
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="{{url_for('static',filename='images/school.jpg')}}" alt="">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">SIGNIFICANT DEVELOPMENTS</h2>
+        <p class="lead">With passage of time, the family home proved too small and Shri Anantrao Shintre donated his own plot of land opposite the family home and, with the help of a donation from the Smt. Indirabai Behere Trust, Pune, a one-storey building was constructed on this plot of land. A further renovation and construction of a library room in the premises was undertaken with the backing of Shri Dipten Putatunda. The construction of the second storey, completed in 2020 with the contribution of the Aditya Birla Group, made Gurukul into the towering structure it is today.</p><br/>
+        <!--<p class="lead">In accordance with the vision of Shri Anantrao Shintre, Gurukul serves as an aid in our children’s journey of becoming a global citizen. We believe that children must have all-round exposure beyond academics and acquire essential life skills. We encourage children to participate in extra-curricular activities and organise such activities within the Gurukul premises. Such activities are also open to students of the local school who are not residents of Gurukul.</p>-->
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="{{url_for('static',filename='images/s8.jpg')}}" alt="">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Sunrise Developments at Gurukul </h2>
+        <p class="lead">In accordance with the vision of Shri Anantrao Shintre for Gurukul to be an aid in a student’s journey of becoming a global citizen, we believe that students must have exposure to aspects of life beyond academics, we encourage students to participate in extra-curricular activities and also organise such activities within the Gurukul premises. Such activities are also open to students of the local school who are not residents of Gurukul.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="{{url_for('static',filename='images/s5.jpg')}}" alt="">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">The Gurukul factor</h2>
+        <p class="lead">We at Gurukul derive inspiration from the great Rishi Sandipani and have resolved that our wards should be able to keep pace with the fast-changing world. Apart from a dedicated library room, we have also installed an e-learning system. The system has English as well as Marathi language settings and ensures that students gain exposure to new methods of learning. We also organise annual educational tours for the students and give them an insight into real-world life.
+        </p><br/>
+        <!--<p class="lead">In accordance with the vision of Shri Anantrao Shintre, Gurukul serves as an aid in our children’s journey of becoming a global citizen. We believe that children must have all-round exposure beyond academics and acquire essential life skills. We encourage children to participate in extra-curricular activities and organise such activities within the Gurukul premises. Such activities are also open to students of the local school who are not residents of Gurukul.</p>-->
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="{{url_for('static',filename='images/s8.jpg')}}" alt="">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  {% endblock %}
